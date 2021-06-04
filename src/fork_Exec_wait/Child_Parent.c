@@ -31,7 +31,7 @@ int main()
           printf("%d ", arr[i]); 
   } 
   else if( pid == 0 ) {
-      int arr[] = {1, 2, 3, 4, 5};
+      int arr[] = {1, 2, 3};
   
       
       close(fd[0]); 
