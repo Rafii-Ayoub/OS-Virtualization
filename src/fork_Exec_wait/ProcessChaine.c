@@ -6,12 +6,14 @@
 
 int n;
 
-//
+// function that prints the id of the process and his parent ( it's a chain process)
+
 int func1(const char *character) {
     printf("I am a %s.  My pid is:%d  my ppid is %d\n", character, getpid(), getppid() );
     return 1;
 }
 
+// function that creats the chain of processes
 int func2(int n) 
 {
     if (n == 0)
