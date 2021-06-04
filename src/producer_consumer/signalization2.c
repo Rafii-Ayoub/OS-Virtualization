@@ -32,27 +32,17 @@ void b2( ){
 
 
 void *p1(void *arg){ 
-
 a1();
 sem_post(&syn1);
 sem_wait(&syn2);
 a2();
-
 }
 
-
-
- 
-
-void *p2(void *arg)
-
-{ 
-
+void *p2(void *arg){ 
 b1();
 sem_wait(&syn1);
 sem_post(&syn2);
 b2();
-
 }
 
 
@@ -61,7 +51,6 @@ b2();
  
 
 void main () {
-
 pthread_t thread1, thread2;
 
 /* semaphore sync should be initialized by 0 */
@@ -86,12 +75,9 @@ if (pthread_create(&thread1, NULL, p1, NULL) < 0) {
 }
 
 if (pthread_create(&thread2, NULL, p2, NULL) < 0) {
-
   perror("Error: thread cannot be created");
   exit(1);
-
 }
-
 
 /* wait for created thread to terminate */
 
