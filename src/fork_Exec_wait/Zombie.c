@@ -2,7 +2,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-// this program help us to observe a Zombie
+// this program help us to observe a Zombie.
 
 int main ()
 {
