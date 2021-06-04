@@ -15,7 +15,8 @@ int main()
   
    if(pid > 0) {
       wait(NULL);
-  
+
+     // closing the standard output
       close(0);
       close(fd[1]); 
   
