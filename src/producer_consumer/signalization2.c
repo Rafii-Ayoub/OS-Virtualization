@@ -45,11 +45,6 @@ sem_post(&syn2);
 b2();
 }
 
-
-
-
- 
-
 void main () {
 pthread_t thread1, thread2;
 
