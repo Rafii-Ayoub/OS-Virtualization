@@ -6,6 +6,7 @@
 
 int n;
 
+//
 int func1(const char *character) {
     printf("I am a %s.  My pid is:%d  my ppid is %d\n", character, getpid(), getppid() );
     return 1;
