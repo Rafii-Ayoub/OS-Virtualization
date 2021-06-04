@@ -17,10 +17,6 @@ void produire(char* message){
 
 void consommer(char* message){
     char *chain = message;
-    /*while (*chain){
-        *chain = toupper(*chain);
-        *chain++;        
-    }*/
     message += toupper(*chain);
     printf("%s\n", message);
 }
