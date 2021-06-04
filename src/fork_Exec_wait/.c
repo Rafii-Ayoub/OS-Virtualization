@@ -33,6 +33,7 @@ int func2(int n)
     return 0;   
 }
 
+// I made a for loop to visualize the how my program  creates a process chain of n process for n=0 to n= 10
 
 int main()
 {
