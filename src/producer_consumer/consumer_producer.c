@@ -4,7 +4,9 @@
 #include <semaphore.h>
 #include <ctype.h>
 #include <string.h>
+
 /* Global variables */
+
 char depot[] = "";
 int k = 0;
 sem_t cons;
