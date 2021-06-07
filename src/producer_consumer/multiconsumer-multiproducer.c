@@ -2,26 +2,24 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <semaphore.h>
+#include <limits.h>
 #include <ctype.h>
 #include <string.h>
-#include <limits.h>
 #include "queue.c"
 
 
 
 
 /* Global variables */
+struct Queue* queue;
 char depot[] = "";
 int k = 0;
-struct Queue* queue;
 sem_t cons;
 sem_t prod;
 
 
 void produire(char* message){
-    //sem_wait(&prod);
     k++;
-    //sem_post(&cons);
     printf("Message : %d", k);
 }
 
